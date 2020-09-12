@@ -451,7 +451,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    18
+                    70
                 </div>
                 
 
@@ -464,7 +464,25 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h2 id="Brandon’s-Smart-Chatbot-Go-Live"><a href="#Brandon’s-Smart-Chatbot-Go-Live" class="headerlink" title="Brandon’s Smart Chatbot Go Live"></a>Brandon’s Smart Chatbot Go Live</h2><p>Hi everyone, AskBrandonsBot is go live now, you can ask him any quetsion.</p>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
             <hr/>
 
@@ -711,6 +729,7 @@
                         
                             Brandon’s Smart Chatbot Go LiveHi everyone, AskBrandonsBot is go live now, you can ask him any quetsion.
 
+        docume
                         
                     </div>
                     <div class="publish-info">
@@ -1003,7 +1022,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Word Count:&nbsp;<span
-                class="white-color">93</span>&nbsp;Words
+                class="white-color">195</span>&nbsp;Words
             
             
             
