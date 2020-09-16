@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://brandonzhang.me/archives/9f443a4b.html</loc>
+    
+    <lastmod>2020-09-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://brandonzhang.me/archives/4a17b156.html</loc>
+    
+    <lastmod>2020-09-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://brandonzhang.me/archives/f64a00e2.html</loc>
+    
+    <lastmod>2020-09-16</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://brandonzhang.me/google1d1e93fda5619a24.html</loc>
     
     <lastmod>2020-09-16</lastmod>
@@ -43,20 +64,6 @@
     
   </url>
   
-  <url>
-    <loc>https://brandonzhang.me/archives/f4c8eb66.html</loc>
-    
-    <lastmod>2020-09-11</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://brandonzhang.me/archives/4a17b156.html</loc>
-    
-    <lastmod>2020-09-11</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>https://brandonzhang.me/</loc>
@@ -66,6 +73,34 @@
   </url>
 
   
+  <url>
+    <loc>https://brandonzhang.me/tags/Teams-Bot-Chatbot-AI/</loc>
+    <lastmod>2020-09-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://brandonzhang.me/tags/Life/</loc>
+    <lastmod>2020-09-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>https://brandonzhang.me/categories/AI/</loc>
+    <lastmod>2020-09-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://brandonzhang.me/categories/Life/</loc>
+    <lastmod>2020-09-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 </urlset>
