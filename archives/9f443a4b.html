@@ -494,7 +494,11 @@
 <li>In the search box enter “bot”. And in the drop-down list, select <strong>Bot Channels Registration</strong>.</li>
 <li>Select the <strong>Create</strong> button.</li>
 <li>In the Bot <strong>Channel Registration</strong> blade, provide the requested information about your bot.</li>
-<li>Leave the <strong>Messaging endpoint</strong> box empty for now, you will enter the required URL after deploying the bot. The following picture shows an example of the registration settings:<br><img src="auth-bot-channels-registration.png"></li>
+<li>Leave the <strong>Messaging endpoint</strong> box empty for now, you will enter the required URL after deploying the bot. The following picture shows an example of the registration settings:  </li>
+</ol>
+<img src="/archives/9f443a4b/auth-bot-channels-registration.png" class="">  
+
+<ol start="6">
 <li>Click <strong>Microsoft App ID</strong> and password and then <strong>Create New.</strong></li>
 <li>Click <strong>Create App ID in the App Registration Portal</strong> link.</li>
 <li>In the displayed <strong>App registration</strong> window, click the <strong>New registration</strong> tab in the upper left.</li>
@@ -517,7 +521,8 @@
 <li>Finally, click <strong>Create</strong>.  </li>
 </ol>
 <p>After Azure has created the registration resource it will be included in the resource group list.  </p>
-<img src="/archives/undefined/auth-bot-channels-registration-group.png" class="" title="This is an image">
+<img src="/archives/9f443a4b/auth-bot-channels-registration-group.png" class="">  
+
 <p>Once your bot channels registration is created, you’ll need to enable the Teams channel.</p>
 <ol>
 <li>In the Azure portal, under Azure services, select the <strong>Bot Channel Registration</strong> you just created.</li>
@@ -579,28 +584,21 @@
 <td>✔</td>
 <td>Specifies whether the bot offers an experience in the context of a channel in a team, in a group chat (groupchat), or an experience scoped to an individual user alone (personal). These options are non-exclusive.</td>
 </tr>
+</tbody></table>
+</li>
+</ol>
+<p>Optionally, you can define one or more lists of commands that your bot can recommend to users. The object is an array (maximum of 2 elements) with all elements of type <em>object</em>. You must define a separate command list for each scope that your bot supports. See <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/create-a-bot-commands-menu">Bot menus</a>, for more information.  </p>
+<table>
+<thead>
 <tr>
-<td>Optionally, you can define one or more lists of commands that your bot can recommend to users. The object is an array (maximum of 2 elements) with all elements of type <em>object</em>. You must define a separate command list for each scope that your bot supports. See <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/create-a-bot-commands-menu">Bot menus</a>, for more information.</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<th>Name</th>
+<th>Type</th>
+<th>Maximum size</th>
+<th>Required</th>
+<th>Description</th>
 </tr>
-<tr>
-<td>Name</td>
-<td>Type</td>
-<td>Maximum size</td>
-<td>Required</td>
-<td>Description</td>
-</tr>
-<tr>
-<td>—</td>
-<td>—</td>
-<td>—</td>
-<td>–</td>
-<td>–</td>
-</tr>
-<tr>
+</thead>
+<tbody><tr>
 <td><em>items.scopes</em></td>
 <td>array of enum</td>
 <td>3</td>
@@ -615,8 +613,7 @@
 <td>An array of commands the bot supports:title: the bot command name (string, 32) description: a simple description or example of the command syntax and its argument (string, 128)</td>
 </tr>
 </tbody></table>
-<h3 id="Simple-manifest-example"><a href="#Simple-manifest-example" class="headerlink" title="Simple manifest example"></a>Simple manifest example</h3>The example below is a simple bot object, with two command lists defined. This is not the entire app manifest file, just the part specific to messaging extensions.  </li>
-</ol>
+<h3 id="Simple-manifest-example"><a href="#Simple-manifest-example" class="headerlink" title="Simple manifest example"></a>Simple manifest example</h3><p>The example below is a simple bot object, with two command lists defined. This is not the entire app manifest file, just the part specific to messaging extensions.  </p>
 <p>‘’’ JSON<br>  “bots”: [<br>    {<br>      “botId”: “%MICROSOFT-APP-ID-REGISTERED-WITH-BOT-FRAMEWORK%”,<br>      “needsChannelSelector”: false,<br>      “isNotificationOnly”: false,<br>      “scopes”: [ “team”, “personal”, “groupchat” ],<br>      “supportsFiles”: true,<br>      “commandLists”: [<br>        {<br>          “scopes”: [ “team”, “groupchat” ],<br>          “commands”: [<br>            {<br>              “title”: “Command 1”,<br>              “description”: “Description of Command 1”<br>            },<br>            {<br>              “title”: “Command N”,<br>              “description”: “Description of Command N”<br>            }<br>          ]<br>        },<br>        {<br>          “scopes”: [ “personal”, “groupchat” ],<br>          “commands”: [<br>            {<br>              “title”: “Personal command 1”,<br>              “description”: “Description of Personal command 1”<br>            },<br>            {<br>              “title”: “Personal command N”,<br>              “description”: “Description of Personal command N”<br>            }<br>          ]<br>        }<br>      ]<br>    }<br>  ],<br>‘’’</p>
 <h3 id="Create-your-app-package-manually"><a href="#Create-your-app-package-manually" class="headerlink" title="Create your app package manually"></a>Create your app package manually</h3><p>To create an app package, you need to add your app manifest and (optionally) your app icons to a .zip archive file. See <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/apps-package">Create your app package</a> for complete details. Make sure your .zip archive contains only the necessary files, and has no additional folder structure inside of it.</p>
 <h2 id="Upload-your-package-to-Microsoft-Teams"><a href="#Upload-your-package-to-Microsoft-Teams" class="headerlink" title="Upload your package to Microsoft Teams"></a>Upload your package to Microsoft Teams</h2><p> <strong>Note</strong><br>To successfully upload your bot, your tenant admin must first <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/manage-apps#manage-org-wide-app-settings">allow uploading</a> third-party or custom apps in Teams.<br>If you’ve been using App Studio, you can install your app from the <strong>Test and distribute</strong> tab of the <strong>Manifest editor</strong>. Alternatively, you can install your app package by clicking the … overflow menu from the left navigation rail, clicking <strong>More apps</strong>, then the <strong>Upload a custom app</strong> link. You can also import an app manifest or app package into App Studio to make additional updates before uploading.</p>
