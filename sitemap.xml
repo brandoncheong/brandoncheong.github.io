@@ -74,7 +74,28 @@
 
   
   <url>
-    <loc>https://brandonzhang.me/tags/Teams-Bot-Chatbot-AI/</loc>
+    <loc>https://brandonzhang.me/tags/Teams/</loc>
+    <lastmod>2020-09-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://brandonzhang.me/tags/Bot/</loc>
+    <lastmod>2020-09-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://brandonzhang.me/tags/Chatbot/</loc>
+    <lastmod>2020-09-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://brandonzhang.me/tags/AI/</loc>
     <lastmod>2020-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
