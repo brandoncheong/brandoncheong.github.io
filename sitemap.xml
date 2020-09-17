@@ -81,13 +81,6 @@
 
   
   <url>
-    <loc>https://brandonzhang.me/tags/Life/</loc>
-    <lastmod>2020-09-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://brandonzhang.me/tags/Teams/</loc>
     <lastmod>2020-09-17</lastmod>
     <changefreq>daily</changefreq>
@@ -115,17 +108,24 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://brandonzhang.me/tags/Life/</loc>
+    <lastmod>2020-09-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
-    <loc>https://brandonzhang.me/categories/Life/</loc>
+    <loc>https://brandonzhang.me/categories/AI/</loc>
     <lastmod>2020-09-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://brandonzhang.me/categories/AI/</loc>
+    <loc>https://brandonzhang.me/categories/Life/</loc>
     <lastmod>2020-09-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
