@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.1.1"></head>
+<meta name="generator" content="Hexo 5.1.1"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -472,6 +472,11 @@
                 
 
                 
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2020-09-17
+                </div>
+                
 
                 
                 <div class="info-break-policy">
@@ -481,8 +486,18 @@
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    9 Min
+                </div>
+                
 
                 
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
@@ -626,9 +641,46 @@
 </tr>
 </tbody></table>
 <h3 id="Simple-manifest-example"><a href="#Simple-manifest-example" class="headerlink" title="Simple manifest example"></a>Simple manifest example</h3><p>The example below is a simple bot object, with two command lists defined. This is not the entire app manifest file, just the part specific to messaging extensions.  </p>
-<p>‘’’ JSON<br>  “bots”: [<br>    {<br>      “botId”: “%MICROSOFT-APP-ID-REGISTERED-WITH-BOT-FRAMEWORK%”,<br>      “needsChannelSelector”: false,<br>      “isNotificationOnly”: false,<br>      “scopes”: [ “team”, “personal”, “groupchat” ],<br>      “supportsFiles”: true,<br>      “commandLists”: [<br>        {<br>          “scopes”: [ “team”, “groupchat” ],<br>          “commands”: [<br>            {<br>              “title”: “Command 1”,<br>              “description”: “Description of Command 1”<br>            },<br>            {<br>              “title”: “Command N”,<br>              “description”: “Description of Command N”<br>            }<br>          ]<br>        },<br>        {<br>          “scopes”: [ “personal”, “groupchat” ],<br>          “commands”: [<br>            {<br>              “title”: “Personal command 1”,<br>              “description”: “Description of Personal command 1”<br>            },<br>            {<br>              “title”: “Personal command N”,<br>              “description”: “Description of Personal command N”<br>            }<br>          ]<br>        }<br>      ]<br>    }<br>  ],<br>‘’’</p>
+<pre class=" language-json"><code class="language-json"><span class="token punctuation">[</span>
+  <span class="token property">"bots"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"botId"</span><span class="token operator">:</span> <span class="token string">"%MICROSOFT-APP-ID-REGISTERED-WITH-BOT-FRAMEWORK%"</span><span class="token punctuation">,</span>
+      <span class="token property">"needsChannelSelector"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">"isNotificationOnly"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">"scopes"</span><span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token string">"team"</span><span class="token punctuation">,</span> <span class="token string">"personal"</span><span class="token punctuation">,</span> <span class="token string">"groupchat"</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">"supportsFiles"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">"commandLists"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"scopes"</span><span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token string">"team"</span><span class="token punctuation">,</span> <span class="token string">"groupchat"</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">"commands"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Command 1"</span><span class="token punctuation">,</span>
+              <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Description of Command 1"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Command N"</span><span class="token punctuation">,</span>
+              <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Description of Command N"</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"scopes"</span><span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token string">"personal"</span><span class="token punctuation">,</span> <span class="token string">"groupchat"</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">"commands"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Personal command 1"</span><span class="token punctuation">,</span>
+              <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Description of Personal command 1"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Personal command N"</span><span class="token punctuation">,</span>
+              <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Description of Personal command N"</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">]</span></code></pre>
 <h3 id="Create-your-app-package-manually"><a href="#Create-your-app-package-manually" class="headerlink" title="Create your app package manually"></a>Create your app package manually</h3><p>To create an app package, you need to add your app manifest and (optionally) your app icons to a .zip archive file. See <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/apps-package">Create your app package</a> for complete details. Make sure your .zip archive contains only the necessary files, and has no additional folder structure inside of it.</p>
-<h2 id="Upload-your-package-to-Microsoft-Teams"><a href="#Upload-your-package-to-Microsoft-Teams" class="headerlink" title="Upload your package to Microsoft Teams"></a>Upload your package to Microsoft Teams</h2><p> <strong>Note</strong><br>To successfully upload your bot, your tenant admin must first <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/manage-apps#manage-org-wide-app-settings">allow uploading</a> third-party or custom apps in Teams.<br>If you’ve been using App Studio, you can install your app from the <strong>Test and distribute</strong> tab of the <strong>Manifest editor</strong>. Alternatively, you can install your app package by clicking the … overflow menu from the left navigation rail, clicking <strong>More apps</strong>, then the <strong>Upload a custom app</strong> link. You can also import an app manifest or app package into App Studio to make additional updates before uploading.</p>
+<h2 id="Upload-your-package-to-Microsoft-Teams"><a href="#Upload-your-package-to-Microsoft-Teams" class="headerlink" title="Upload your package to Microsoft Teams"></a>Upload your package to Microsoft Teams</h2><p> <strong>Note</strong><br>To successfully upload your bot, your tenant admin must first <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/manage-apps#manage-org-wide-app-settings">allow uploading</a> third-party or custom apps in Teams.<br>If you’ve been using App Studio, you can install your app from the <strong>Test and distribute</strong> tab of the <strong>Manifest editor</strong>. Alternatively, you can install your app package by clicking the … overflow menu from the left navigation rail, clicking <strong>More apps</strong>, then the <strong>Upload a custom app</strong> link. You can also import an app manifest or app package into App Studio to make additional updates before uploading..</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1483,7 +1535,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             Copyright&nbsp;&copy;
             <span id="year">2020</span>
             <a href="/about" target="_blank">Brandon</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank" rel="external nofollow">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/brandoncheong/brandoncheong.github.io" target="_blank">Matery</a>
             <br>
             
@@ -1685,9 +1737,16 @@ $(function () {
     
 
     
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
+    
 
     
 
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
     
 
     
