@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://brandonzhang.me/archives/29cb6542.html</loc>
+    
+    <lastmod>2020-09-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://brandonzhang.me/archives/22652c2c.html</loc>
+    
+    <lastmod>2020-09-17</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://brandonzhang.me/archives/9f443a4b.html</loc>
     
     <lastmod>2020-09-17</lastmod>
@@ -19,13 +33,6 @@
     <loc>https://brandonzhang.me/archives/f64a00e2.html</loc>
     
     <lastmod>2020-09-17</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://brandonzhang.me/archives/4a17b156.html</loc>
-    
-    <lastmod>2020-09-16</lastmod>
     
   </url>
   
@@ -109,7 +116,35 @@
   </url>
   
   <url>
+    <loc>https://brandonzhang.me/tags/QnaMaker/</loc>
+    <lastmod>2020-09-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://brandonzhang.me/tags/Life/</loc>
+    <lastmod>2020-09-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://brandonzhang.me/tags/Blog/</loc>
+    <lastmod>2020-09-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://brandonzhang.me/tags/Hexo/</loc>
+    <lastmod>2020-09-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://brandonzhang.me/tags/hexo-theme-matery/</loc>
     <lastmod>2020-09-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -126,6 +161,13 @@
   
   <url>
     <loc>https://brandonzhang.me/categories/Life/</loc>
+    <lastmod>2020-09-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://brandonzhang.me/categories/Front-end/</loc>
     <lastmod>2020-09-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
