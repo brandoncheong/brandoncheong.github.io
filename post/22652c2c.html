@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Create a bot for Microsoft Teams, Mingming &amp; Leilei&#39;s Home">
+    <meta name="keywords" content="Create a Teams Chatbot with QnaMaker, Mingming &amp; Leilei&#39;s Home">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Create a bot for Microsoft Teams | Mingming &amp; Leilei&#39;s Home</title>
+    <title>Create a Teams Chatbot with QnaMaker | Mingming &amp; Leilei&#39;s Home</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -309,12 +309,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Create a bot for Microsoft Teams</h1>
+                    <h1 class="description center-align post-title">Create a Teams Chatbot with QnaMaker</h1>
                 </div>
             </div>
         </div>
@@ -447,6 +447,10 @@
                                 <span class="chip bg-color">AI</span>
                             </a>
                         
+                            <a href="/tags/QnaMaker/">
+                                <span class="chip bg-color">QnaMaker</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -468,7 +472,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-09-16
+                    2020-09-17
                 </div>
                 
 
@@ -482,14 +486,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    1.5k
+                    117
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    9 Min
+                    1 Min
                 </div>
                 
 
@@ -504,184 +508,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>You’ll need to complete the following steps to create a conversational bot:<br><br>1: Prepare your development environment.<br><br>2: Create your web service.<br><br>3: Register your web service as a bot with Microsoft Bot Framework.<br><br>4: Create your app manifest and your app package.<br><br>5: Upload your package to Microsoft Teams.<br></p>
-<h2 id="Prepare-your-development-environment"><a href="#Prepare-your-development-environment" class="headerlink" title="Prepare your development environment"></a>Prepare your development environment</h2><p>The first thing you’ll need to do is prepare your development environment. You’ll need to make sure custom app uploading is enabled for the Office 365 organization you want to build your app in. If you need a dedicated development tenant, you can sign up for the <a target="_blank" rel="noopener" href="https://developer.microsoft.com/office/dev-program">Office 365 developer program</a>. For additional information see <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/prepare-your-o365-tenant">Setup your development environment</a>.</p>
-<h2 id="Create-your-web-service"><a href="#Create-your-web-service" class="headerlink" title="Create your web service"></a>Create your web service</h2><p>The heart of your bot is your <strong>web service</strong>. It will define a single route, typically <em>/api/messages</em>, on which to receive all requests. To get started, you have a few options to choose from:</p>
-<ul>
-<li>Start with the Teams conversation bot sample in either <a target="_blank" rel="noopener" href="https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/57.teams-conversation-bot">C#/dotnet Github Samples</a> or <a target="_blank" rel="noopener" href="https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot">JavaScript Github Samples</a>.</li>
-<li>If you’re using JavaScript, use the <a target="_blank" rel="noopener" href="https://github.com/OfficeDev/generator-teams">Yeoman Generator for Microsoft Teams</a> to scaffold your Teams app, including your web service. This is particularly helpful when building a Teams app that contains more than just a conversational bot.</li>
-<li>Create your web service from scratch. You can choose to add the Bot Framework SDK for your language, or you can work directly with the JSON payloads.</li>
-</ul>
-<h2 id="Register-your-web-service-with-the-Bot-Framework"><a href="#Register-your-web-service-with-the-Bot-Framework" class="headerlink" title="Register your web service with the Bot Framework"></a>Register your web service with the Bot Framework</h2><p> Important</p>
-<p>When registering your web service, be sure to set the <strong>Display name</strong> to the same name you used for your <strong>Short name</strong> in your app manifest. When your app is distributed by either direct uploading or through an organization’s app catalog, messages sent to a conversation by your bot will use the registration’s <strong>Display name</strong> rather than the app’s <strong>Short name</strong>.</p>
-<p>Registering your web service with the Bot Framework provides a secure communication channel between the Teams client and your web service. The Teams client and your web service never communicate directly. Instead, messages are routed through the Bot Framework Service (Microsoft Teams uses a separate instance of this service that is compliant with Office 365 standards).</p>
-<p>You have two options when registering your web service with the Bot Framework. You can use either <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/create-a-bot-for-teams#using-app-studio">App Studio</a> or the <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/create-a-bot-for-teams#in-the-legacy-portal">legacy portal</a> to register your bot without using an Azure subscription. Or, if you already have an Azure subscription (or don’t mind creating one), you can use the <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/create-a-bot-for-teams#with-an-azure-subscription">Azure portal</a> to register your web service.</p>
-<h3 id="With-an-Azure-subscription"><a href="#With-an-Azure-subscription" class="headerlink" title="With an Azure subscription"></a>With an Azure subscription</h3><p>You can also register your web service by creating a Bot Channels Registration resource in the Azure portal.</p>
-<ol>
-<li>In the <a target="_blank" rel="noopener" href="https://ms.portal.azure.com/#home">Azure portal</a>, under Azure services, select <strong>Create a resource</strong>.</li>
-<li>In the search box enter “bot”. And in the drop-down list, select <strong>Bot Channels Registration</strong>.</li>
-<li>Select the <strong>Create</strong> button.</li>
-<li>In the Bot <strong>Channel Registration</strong> blade, provide the requested information about your bot.</li>
-<li>Leave the <strong>Messaging endpoint</strong> box empty for now, you will enter the required URL after deploying the bot. The following picture shows an example of the registration settings:  </li>
-</ol>
-<img src="/archives/9f443a4b/auth-bot-channels-registration.png" class="">  
-
-<ol start="6">
-<li>Click <strong>Microsoft App ID</strong> and password and then <strong>Create New.</strong></li>
-<li>Click <strong>Create App ID in the App Registration Portal</strong> link.</li>
-<li>In the displayed <strong>App registration</strong> window, click the <strong>New registration</strong> tab in the upper left.</li>
-<li>Enter the name of the bot application you are registering, we used <em>BotTeamsAuth</em> (you need to select your own unique name).</li>
-<li>or the <strong>Supported account types</strong> select <em>Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox).</em></li>
-<li>Click the <strong>Register</strong> button. Once completed, Azure displays the Overview page for the application.</li>
-<li>Copy and save to a file the <strong>Application (client) ID</strong> value.</li>
-<li>In the left panel, click <strong>Certificate and secrets</strong>.</li>
-</ol>
-<ul>
-<li>Under Client secrets, click <strong>New client secret</strong>.</li>
-<li>Add a description to identify this secret from others you might need to create for this app.</li>
-<li>Set <em>Expires</em> to your selection.</li>
-<li>Click <strong>Add</strong>.</li>
-<li>Copy the client secret and save it to a file.</li>
-</ul>
-<ol start="14">
-<li>Go back to the <strong>Bot Channel Registration</strong> window and copy the App ID and the Client secret in the <strong>Microsoft App ID</strong> and <strong>Password</strong> boxes, respectively.</li>
-<li>Click <strong>OK</strong>.</li>
-<li>Finally, click <strong>Create</strong>.  </li>
-</ol>
-<p>After Azure has created the registration resource it will be included in the resource group list.  </p>
-<img src="/archives/9f443a4b/auth-bot-channels-registration-group.png" class="">  
-
-<p>Once your bot channels registration is created, you’ll need to enable the Teams channel.</p>
-<ol>
-<li>In the Azure portal, under Azure services, select the <strong>Bot Channel Registration</strong> you just created.</li>
-<li>In the left panel, click <strong>Channels</strong>.</li>
-<li>Click the Microsoft Teams icon, then choose <strong>Save</strong>.  </li>
-</ol>
-<h2 id="Create-your-app-manifest-and-package"><a href="#Create-your-app-manifest-and-package" class="headerlink" title="Create your app manifest and package"></a>Create your app manifest and package</h2><p>Your app manifest defines the metadata for your app, the extension points your app is using, and pointers to the web services those extension points connect to. You can either use App Studio to help you create your app manifest, or create it manually.  </p>
-<h3 id="Add-using-App-Studio"><a href="#Add-using-App-Studio" class="headerlink" title="Add using App Studio"></a>Add using App Studio</h3><ol>
-<li>In the Teams client, open App Studio from the … overflow menu on the left navigation rail. If App Studio isn’t already installed, you can do so by searching for it.</li>
-<li>On the <strong>Manifest editor</strong> tab select <strong>Create a new app</strong> (or if you’re adding a bot to an existing app, you can import your app package)</li>
-<li>Add your app details (see <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/platform/resources/schema/manifest-schema">manifest schema definition</a> for full descriptions of each field).</li>
-<li>On the <strong>Bots</strong> tab select the <strong>Setup</strong> button.</li>
-<li>You can either create a new web service registration (<strong>New bot</strong>), or if you’ve already registered one, select <strong>Existing bot</strong>.</li>
-<li>Select the capabilities and scopes your bot will need.</li>
-<li>If necessary, update your bot endpoint address to point to your bot. It should look something like <a target="_blank" rel="noopener" href="https://someplace.com/api/messages">https://someplace.com/api/messages</a>.</li>
-<li>Optionally, add <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/create-a-bot-commands-menu">bot commands</a>.</li>
-<li>Optionally, you can download your completed app package from the <strong>Test and distribute</strong> tab.<h3 id="Create-it-manually"><a href="#Create-it-manually" class="headerlink" title="Create it manually"></a>Create it manually</h3>As with messaging extensions and tabs, you update the <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/platform/resources/schema/manifest-schema">app-manifest</a> to define your bot. Add new top-level JSON structure in your app manifest with the <em>bots</em> property.<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Maximum size</th>
-<th>Required</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><em>botId</em></td>
-<td>String</td>
-<td>64 characters</td>
-<td>✔</td>
-<td>The unique Microsoft app ID for the bot as registered with the Bot Framework. This may well be the same as the overall app ID.</td>
-</tr>
-<tr>
-<td><em>needsChannelSelector</em></td>
-<td>Boolean</td>
-<td>64 characters</td>
-<td></td>
-<td>Describes whether or not the bot utilizes a user hint to add the bot to a specific channel. Default: false.</td>
-</tr>
-<tr>
-<td><em>isNotificationOnly</em></td>
-<td>Boolean</td>
-<td>64 characters</td>
-<td></td>
-<td>Indicates whether a bot is a one-way, notification-only bot, as opposed to a conversational bot. Default: false.</td>
-</tr>
-<tr>
-<td><em>supportsFiles</em></td>
-<td>Boolean</td>
-<td>64 characters</td>
-<td></td>
-<td>ndicates whether the bot supports the ability to upload/download files in personal chat. Default: false.</td>
-</tr>
-<tr>
-<td><em>scopes</em></td>
-<td>Array of enum</td>
-<td>3</td>
-<td>✔</td>
-<td>Specifies whether the bot offers an experience in the context of a channel in a team, in a group chat (groupchat), or an experience scoped to an individual user alone (personal). These options are non-exclusive.</td>
-</tr>
-</tbody></table>
-</li>
-</ol>
-<p>Optionally, you can define one or more lists of commands that your bot can recommend to users. The object is an array (maximum of 2 elements) with all elements of type <em>object</em>. You must define a separate command list for each scope that your bot supports. See <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/create-a-bot-commands-menu">Bot menus</a>, for more information.  </p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Maximum size</th>
-<th>Required</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><em>items.scopes</em></td>
-<td>array of enum</td>
-<td>3</td>
-<td>✔</td>
-<td>Specifies the scope for which the command list is valid. Options are team, personal, and groupchat.</td>
-</tr>
-<tr>
-<td><em>items.commands</em></td>
-<td>array of objects</td>
-<td>10</td>
-<td>✔</td>
-<td>An array of commands the bot supports:title: the bot command name (string, 32) description: a simple description or example of the command syntax and its argument (string, 128)</td>
-</tr>
-</tbody></table>
-<h3 id="Simple-manifest-example"><a href="#Simple-manifest-example" class="headerlink" title="Simple manifest example"></a>Simple manifest example</h3><p>The example below is a simple bot object, with two command lists defined. This is not the entire app manifest file, just the part specific to messaging extensions.  </p>
-<pre class="line-numbers language-json"><code class="language-json"><span class="token punctuation">[</span>
-  <span class="token property">"bots"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
-    <span class="token punctuation">{</span>
-      <span class="token property">"botId"</span><span class="token operator">:</span> <span class="token string">"%MICROSOFT-APP-ID-REGISTERED-WITH-BOT-FRAMEWORK%"</span><span class="token punctuation">,</span>
-      <span class="token property">"needsChannelSelector"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-      <span class="token property">"isNotificationOnly"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-      <span class="token property">"scopes"</span><span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token string">"team"</span><span class="token punctuation">,</span> <span class="token string">"personal"</span><span class="token punctuation">,</span> <span class="token string">"groupchat"</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
-      <span class="token property">"supportsFiles"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-      <span class="token property">"commandLists"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
-        <span class="token punctuation">{</span>
-          <span class="token property">"scopes"</span><span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token string">"team"</span><span class="token punctuation">,</span> <span class="token string">"groupchat"</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
-          <span class="token property">"commands"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
-            <span class="token punctuation">{</span>
-              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Command 1"</span><span class="token punctuation">,</span>
-              <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Description of Command 1"</span>
-            <span class="token punctuation">}</span><span class="token punctuation">,</span>
-            <span class="token punctuation">{</span>
-              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Command N"</span><span class="token punctuation">,</span>
-              <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Description of Command N"</span>
-            <span class="token punctuation">}</span>
-          <span class="token punctuation">]</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token punctuation">{</span>
-          <span class="token property">"scopes"</span><span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token string">"personal"</span><span class="token punctuation">,</span> <span class="token string">"groupchat"</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
-          <span class="token property">"commands"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
-            <span class="token punctuation">{</span>
-              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Personal command 1"</span><span class="token punctuation">,</span>
-              <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Description of Personal command 1"</span>
-            <span class="token punctuation">}</span><span class="token punctuation">,</span>
-            <span class="token punctuation">{</span>
-              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Personal command N"</span><span class="token punctuation">,</span>
-              <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Description of Personal command N"</span>
-            <span class="token punctuation">}</span>
-          <span class="token punctuation">]</span>
-        <span class="token punctuation">}</span>
-      <span class="token punctuation">]</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">]</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="Create-your-app-package-manually"><a href="#Create-your-app-package-manually" class="headerlink" title="Create your app package manually"></a>Create your app package manually</h3><p>To create an app package, you need to add your app manifest and (optionally) your app icons to a .zip archive file. See <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/apps-package">Create your app package</a> for complete details. Make sure your .zip archive contains only the necessary files, and has no additional folder structure inside of it.</p>
-<h2 id="Upload-your-package-to-Microsoft-Teams"><a href="#Upload-your-package-to-Microsoft-Teams" class="headerlink" title="Upload your package to Microsoft Teams"></a>Upload your package to Microsoft Teams</h2><p> <strong>Note</strong><br>To successfully upload your bot, your tenant admin must first <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/manage-apps#manage-org-wide-app-settings">allow uploading</a> third-party or custom apps in Teams.<br>If you’ve been using App Studio, you can install your app from the <strong>Test and distribute</strong> tab of the <strong>Manifest editor</strong>. Alternatively, you can install your app package by clicking the … overflow menu from the left navigation rail, clicking <strong>More apps</strong>, then the <strong>Upload a custom app</strong> link. You can also import an app manifest or app package into App Studio to make additional updates before uploading..</p>
+                <h2 id="Introduction-to-Bots-in-Microsoft-Teams"><a href="#Introduction-to-Bots-in-Microsoft-Teams" class="headerlink" title="Introduction to Bots in Microsoft Teams"></a>Introduction to Bots in Microsoft Teams</h2><p>You can begin to create your bot by populating your QnaMaker.ai. Here you can add to your bots knowledge base by answer FAQs, uploading files, and even giving it some character. You can then test and distribute your bot onto Teams using Azure. Bots uploaded to Teams will be pinned to the top left-hand side of the platform. </p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -725,7 +552,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://brandonzhang.me/archives/9f443a4b.html">https://brandonzhang.me/archives/9f443a4b.html</a>
+                    <a href="https://brandonzhang.me/post/22652c2c.html">https://brandonzhang.me/post/22652c2c.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -777,6 +604,10 @@
                             
                                 <a href="/tags/AI/">
                                     <span class="chip bg-color">AI</span>
+                                </a>
+                            
+                                <a href="/tags/QnaMaker/">
+                                    <span class="chip bg-color">QnaMaker</span>
                                 </a>
                             
                         </div>
@@ -1211,25 +1042,86 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/archives/22652c2c.html">
+                <a href="/post/a6396d7.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Create a Teams Chatbot with QnaMaker">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="SEO-Search Engine Optimization">
                         
-                        <span class="card-title">Create a Teams Chatbot with QnaMaker</span>
+                        <span class="card-title">SEO-Search Engine Optimization</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            You can begin to create your bot by populating your QnaMaker.ai. Here you can add to your bots knowledge base by answer FAQs, uploading files, and even giving it some character. You can then test and distribute your bot onto Teams using Azure. Bots uploaded to Teams will be pinned to the top left-hand side of the platform.
+                            SEO, The Search Engine Optimization, made your wbesite easily found by others from the Internet.
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-17
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-18
                         </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Front-end/" class="post-category">
+                                    Front-end
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/SEO/">
+                        <span class="chip bg-color">SEO</span>
+                    </a>
+                    
+                    <a href="/tags/Sitemap/">
+                        <span class="chip bg-color">Sitemap</span>
+                    </a>
+                    
+                    <a href="/tags/reboot/">
+                        <span class="chip bg-color">reboot</span>
+                    </a>
+                    
+                    <a href="/tags/Google-Search-Console/">
+                        <span class="chip bg-color">Google Search Console</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/post/9f443a4b.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Create a bot for Microsoft Teams">
+                        
+                        <span class="card-title">Create a bot for Microsoft Teams</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            You’ll need to complete the following steps to create a conversational bot:1: Prepare your development environment.2: Cr
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-16
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1259,67 +1151,6 @@
                     
                     <a href="/tags/AI/">
                         <span class="chip bg-color">AI</span>
-                    </a>
-                    
-                    <a href="/tags/QnaMaker/">
-                        <span class="chip bg-color">QnaMaker</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/archives/29cb6542.html">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Hexo博客主题hexo-theme-matery">
-                        
-                        <span class="card-title">Hexo博客主题hexo-theme-matery</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            The personal blog was buit with Hexo and used the "hexo-theme-matery" as the Theme. Used "Valine" and "busuanzi statistics". Responsive design, blog can be displayed well on desktop, tablet, mobile phone and other devices
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-11
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Front-end/" class="post-category">
-                                    Front-end
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Blog/">
-                        <span class="chip bg-color">Blog</span>
-                    </a>
-                    
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
-                    </a>
-                    
-                    <a href="/tags/hexo-theme-matery/">
-                        <span class="chip bg-color">hexo-theme-matery</span>
                     </a>
                     
                 </div>
@@ -1563,7 +1394,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Word Count:&nbsp;<span
-                class="white-color">6.1k</span>&nbsp;Words
+                class="white-color">7.2k</span>&nbsp;Words
             
             
             

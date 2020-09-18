@@ -471,7 +471,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-09-17
+                    2020-09-18
                 </div>
                 
 
@@ -806,8 +806,8 @@
   <span class="token punctuation">-</span> Typora
   <span class="token punctuation">-</span> Markdown
 <span class="token punctuation">---</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="效果截图"><a href="#效果截图" class="headerlink" title="效果截图"></a>效果截图</h2><img src="/archives/null/Home-Page-Capture.PNG" class="" title="首页">  
-<img src="/archives/null/Home-Page-2.PNG" class="" title="首页推荐文章">  
+<h2 id="效果截图"><a href="#效果截图" class="headerlink" title="效果截图"></a>效果截图</h2><img src="/post/29cb6542/Home-Page-Capture.PNG" class="" title="首页">  
+<img src="/post/29cb6542/Home-Page-2.PNG" class="" title="首页推荐文章">  
 
 <h2 id="自定制修改"><a href="#自定制修改" class="headerlink" title="自定制修改"></a>自定制修改</h2><p>在本主题的 <code>_config.yml</code> 中可以修改部分自定义信息，有以下几个部分：</p>
 <ul>
@@ -859,29 +859,21 @@
 <li>hexo d（部署）<h3 id="在文章中插入图片"><a href="#在文章中插入图片" class="headerlink" title="在文章中插入图片"></a>在文章中插入图片</h3><h4 id="本地引用"><a href="#本地引用" class="headerlink" title="本地引用"></a>本地引用</h4></li>
 <li>绝对路径<br>当Hexo项目中只用到少量图片时，可以将图片统一放在<code>source/images</code>文件夹中，通过markdown语法访问它们。</li>
 </ul>
-<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
-<span class="token tag">![图片描述](/images/image.jpg)</span>
-<span class="token punctuation">---</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token tag">![图片描述](/images/image.jpg)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>图片既可以在首页内容中访问到，也可以在文章正文中访问到。  </p>
 <ul>
 <li>相对路径<br>图片除了可以放在统一的<code>images</code>文件夹中，还可以放在文章自己的目录中。文章的目录可以通过配置<code>_config.yml</code>来生成。</li>
 </ul>
-<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
-<span class="token key atrule">post_asset_folder</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-<span class="token punctuation">---</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">post_asset_folder</span><span class="token punctuation">:</span> <span class="token boolean important">true</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>将<code>_config.yml</code>文件中的配置项<code>post_asset_folder</code>设为true后，执行命令</p>
 <pre class="line-numbers language-bash"><code class="language-bash">hexo new post <span class="token string">"article title"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>在<code>source/_posts</code>中会生成文章<code>article title.md</code>和同名文件夹<code>article title</code>。将图片资源放在<code>article title</code>中，文章就可以使用相对路径引用图片资源了</p>
-<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
-<span class="token tag">![图片描述](image.jpg)</span>
-<span class="token punctuation">---</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token tag">![图片描述](image.jpg)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>上述是markdown的引用方式，图片只能在文章中显示，但无法在首页中正常显示。<br>如果希望图片在文章和首页中同时显示，可以使用标签插件语法  </p>
 <ul>
 <li>推荐使用</li>
 </ul>
-<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
-<span class="token punctuation">{</span>% asset_img image.jpg 图片描述 %<span class="token punctuation">}</span>
-<span class="token punctuation">---</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token punctuation">{</span>% asset_img image.jpg 图片描述 %<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="新建文章模板修改"><a href="#新建文章模板修改" class="headerlink" title="新建文章模板修改"></a>新建文章模板修改</h2><p>首先为了新建文章方便，我们可以修改一下文章模板，建议将<code>/scaffolds/post.md</code>修改为如下代码  </p>
 <pre class="line-numbers language-json"><code class="language-json">---
 title<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">{</span> title <span class="token punctuation">}</span><span class="token punctuation">}</span>
@@ -945,7 +937,7 @@ categories<span class="token operator">:</span>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://brandonzhang.me/archives/29cb6542.html">https://brandonzhang.me/archives/29cb6542.html</a>
+                    <a href="https://brandonzhang.me/post/29cb6542.html">https://brandonzhang.me/post/29cb6542.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1427,7 +1419,7 @@ categories<span class="token operator">:</span>
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/archives/9f443a4b.html">
+                <a href="/post/9f443a4b.html">
                     <div class="card-image">
                         
                         
@@ -1488,7 +1480,7 @@ categories<span class="token operator">:</span>
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/archives/f64a00e2.html">
+                <a href="/post/f64a00e2.html">
                     <div class="card-image">
                         
                         
@@ -1767,7 +1759,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Word Count:&nbsp;<span
-                class="white-color">6.1k</span>&nbsp;Words
+                class="white-color">7.2k</span>&nbsp;Words
             
             
             

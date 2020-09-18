@@ -2,21 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://brandonzhang.me/archives/29cb6542.html</loc>
+    <loc>https://brandonzhang.me/post/a6396d7.html</loc>
+    
+    <lastmod>2020-09-18</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://brandonzhang.me/post/29cb6542.html</loc>
+    
+    <lastmod>2020-09-18</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://brandonzhang.me/post/f64a00e2.html</loc>
+    
+    <lastmod>2020-09-18</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://brandonzhang.me/post/22652c2c.html</loc>
     
     <lastmod>2020-09-17</lastmod>
     
   </url>
   
   <url>
-    <loc>https://brandonzhang.me/archives/22652c2c.html</loc>
-    
-    <lastmod>2020-09-17</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://brandonzhang.me/archives/9f443a4b.html</loc>
+    <loc>https://brandonzhang.me/post/9f443a4b.html</loc>
     
     <lastmod>2020-09-17</lastmod>
     
@@ -24,13 +38,6 @@
   
   <url>
     <loc>https://brandonzhang.me/friends/index.html</loc>
-    
-    <lastmod>2020-09-17</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://brandonzhang.me/archives/f64a00e2.html</loc>
     
     <lastmod>2020-09-17</lastmod>
     
@@ -81,7 +88,7 @@
 
   <url>
     <loc>https://brandonzhang.me/</loc>
-    <lastmod>2020-09-17</lastmod>
+    <lastmod>2020-09-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -89,63 +96,91 @@
   
   <url>
     <loc>https://brandonzhang.me/tags/Teams/</loc>
-    <lastmod>2020-09-17</lastmod>
+    <lastmod>2020-09-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://brandonzhang.me/tags/Bot/</loc>
-    <lastmod>2020-09-17</lastmod>
+    <lastmod>2020-09-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://brandonzhang.me/tags/Chatbot/</loc>
-    <lastmod>2020-09-17</lastmod>
+    <lastmod>2020-09-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://brandonzhang.me/tags/AI/</loc>
-    <lastmod>2020-09-17</lastmod>
+    <lastmod>2020-09-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://brandonzhang.me/tags/QnaMaker/</loc>
-    <lastmod>2020-09-17</lastmod>
+    <lastmod>2020-09-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://brandonzhang.me/tags/SEO/</loc>
+    <lastmod>2020-09-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://brandonzhang.me/tags/Sitemap/</loc>
+    <lastmod>2020-09-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://brandonzhang.me/tags/reboot/</loc>
+    <lastmod>2020-09-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://brandonzhang.me/tags/Google-Search-Console/</loc>
+    <lastmod>2020-09-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://brandonzhang.me/tags/Life/</loc>
-    <lastmod>2020-09-17</lastmod>
+    <lastmod>2020-09-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://brandonzhang.me/tags/Blog/</loc>
-    <lastmod>2020-09-17</lastmod>
+    <lastmod>2020-09-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://brandonzhang.me/tags/Hexo/</loc>
-    <lastmod>2020-09-17</lastmod>
+    <lastmod>2020-09-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://brandonzhang.me/tags/hexo-theme-matery/</loc>
-    <lastmod>2020-09-17</lastmod>
+    <lastmod>2020-09-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -154,21 +189,21 @@
   
   <url>
     <loc>https://brandonzhang.me/categories/AI/</loc>
-    <lastmod>2020-09-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://brandonzhang.me/categories/Life/</loc>
-    <lastmod>2020-09-17</lastmod>
+    <lastmod>2020-09-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://brandonzhang.me/categories/Front-end/</loc>
-    <lastmod>2020-09-17</lastmod>
+    <lastmod>2020-09-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://brandonzhang.me/categories/Life/</loc>
+    <lastmod>2020-09-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
