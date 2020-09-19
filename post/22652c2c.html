@@ -479,21 +479,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-09-17
+                    2020-09-19
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    117
+                    3.9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    24 Min
                 </div>
                 
 
@@ -508,8 +508,213 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Introduction-to-Bots-in-Microsoft-Teams"><a href="#Introduction-to-Bots-in-Microsoft-Teams" class="headerlink" title="Introduction to Bots in Microsoft Teams"></a>Introduction to Bots in Microsoft Teams</h2><p>You can begin to create your bot by populating your QnaMaker.ai. Here you can add to your bots knowledge base by answer FAQs, uploading files, and even giving it some character. You can then test and distribute your bot onto Teams using Azure. Bots uploaded to Teams will be pinned to the top left-hand side of the platform. </p>
-<script>
+                <h1 id="Create-to-Bots-in-Microsoft-Teams"><a href="#Create-to-Bots-in-Microsoft-Teams" class="headerlink" title="Create to Bots in Microsoft Teams"></a>Create to Bots in Microsoft Teams</h1><p>Hey, my friend, todat we’re going to talk about how to create bots in Teams.  </p>
+<h2 id="The-background-and-original-intention-of-the-project"><a href="#The-background-and-original-intention-of-the-project" class="headerlink" title="The background and original intention of the project"></a>The background and original intention of the project</h2><p>Currently, i am working as System Administrator and also HQ helpdesk support role in current company. Because my current company does not have a <strong><code>KMS</code></strong>-<code>knowledge management system</code>, I spent nearly 2 months developed a <code>KMS</code> using the <a target="_blank" rel="noopener" href="https://www.dokuwiki.org/dokuwiki">Dokuwiki</a> opensource tool to help our staffs find answers of their questions faster and more conveniently. </p>
+<blockquote>
+<p>Visit <a target="_blank" rel="noopener" href="https://bkms.cf/"><code>BKMS - Brandon's Knowledge Management System</code></a>：   </p>
+</blockquote>
+<p>One of the <code>biggest hurdles</code> of implementing a knowledge management system is <code>getting employees to embrace it</code>. They may fear that sharing their knowledge will <code>reduce the value</code> that they provide and <code>put their jobs at risk</code>, and/or that a new system will <code>take up too much of their time</code>. They may just be comfortable with the old way of doing things and <code>do not want to adopt another tool or process</code> into their workflow.  </p>
+<p>It is important to <code>form a strategy</code> for not only how the company will share and store knowledge, but how the business will encourage employees to do the same. To be successful, a clear goal to <code>create a company culture that prioritizes knowledge sharing is crucial</code>. The overall goal of knowledge management should be <code>to drive positive business and employee outcomes</code>, When employees understand the upside, chances of successfully rolling out a knowledge management program are much higher.</p>
+<p>So this is the ultimate goal I want to create an intelligent <code>FAQ answering bot</code>. <code>Microsoft Teams</code> is a communication tool that everyone uses, so i am going deploy this chatbot on <code>Microsoft Teams</code>.  </p>
+<h3 id="What-are-bots"><a href="#What-are-bots" class="headerlink" title="What are bots"></a>What are bots</h3><img src="/post/22652c2c/bot.jpg" class="">  
+
+<p>let’s get started first with what are <code>bots</code> and when we think about <code>bots</code> , we always think about very complex <code>algorithms</code> but in reality they’re just automated intelligent programs and they’re actually providing us a number of things but most importantly it’s information in a <code>natural and comprehensive language</code>. So we’re going to use pretty much our natural language, the way that we do conversations, the way that we normally would ask a human being to provide information and <code>bots</code> are intelligent enough to both understand what we’re asking but also provide it in an equally as comprehensive language back to us. Of course we only want information that is interesting to the user based on queries or status updates that are related to the person who is requesting the information. And then finally it needs to be in an easy to find location. It can’t be something that you have to look for before you can start<br>asking those questions.</p>
+<h3 id="Why-are-we-using-bots"><a href="#Why-are-we-using-bots" class="headerlink" title="Why are we using bots"></a>Why are we using bots</h3><p>When we look at it how were we used to <strong>finding information</strong>? And you all are going to recognize it if we look for information either if it’s on the internet or it’s on a specific website, what you’re going to see is that we always need to look with search terms. It doesn’t matter if it’s on <code>Bing</code>, on <code>Google</code>, or even more complex search like <code>SharePoint</code> search or even a website search you have to know how to use search, you have to know what the operators are. You need to know really how to use that search to find the information that is relevant to you. Additionally, what is also a problem is that the <strong>search engine</strong> doesn’t really know anything about you. They don’t know your user context so they’re only going to be able to provide you generic information based on your search term.   </p>
+<h3 id="The-way-of-finding-information-has-changed"><a href="#The-way-of-finding-information-has-changed" class="headerlink" title="The way of finding information has changed"></a>The way of finding information has changed</h3><p>That way of technology, that way of finding information has changed. When we look at how we find information now we are using more our natural language and it doesn’t matter if you have <code>Alexa</code>, <code>Google</code>, <code>Siri</code>, or even <code>Cortana</code>, what we’re going to do is ask those virtual assistants, those bots to provide us with information. It could be, hey Alexa what is the recipe for an apple pie or hey <code>Cortana</code>, when does my plane leave? We’re not going to go anymore to the scheduling of the airline to find when that information is. When we need to know how long traffic is going to be on our way to the airport, we’re not going to go to traffic website, provide in our source, provide in our destination, and do the calculation on our own.   </p>
+<p>Nowadays you can actually get the information just based on a status update. Maybe you’ve seen it but if you have a meeting in Outlook for example actually <code>Cortana</code> is going to tell you be careful your appointment is at that location, traffic is heavy. It takes about 25 minutes to get there you might wanna take off and just make sure you get there in time. And this is of course our virtual assistants but we also see more and more on websites that popup coming with a let’s call it a sales bot or a marketing bot where they’re going to ask is there anything I can do for you? What are you looking for?   </p>
+<p>People who write these <code>bots</code> don’t want you to go in and use the search box because we know once we have to search for something they leave, we go away from that website. So that’s not something that we’re looking for. So the way that we’re finding information, the way that we’re looking for information has changed. We’re looking at it more from a conversation perspective. And good <code>bots</code>, <code>bots</code> for example that are a part of <code>Microsoft Teams</code> as well are going to accommodate that in a very specific way. So if we know that people find information in a more conversational way.</p>
+<h3 id="eg-When-students-need-additional-support-where-are-they-going"><a href="#eg-When-students-need-additional-support-where-are-they-going" class="headerlink" title="eg. When students need additional support where are they going"></a>eg. When students need additional support where are they going</h3><p>When students are stressed and need some additional support where are they going? Where do you find it, right? Using or dealing with <code>mental health problems</code> has sometimes a stigma and you don’t always wanna reach out to a physical person to get that. So having that first interaction with a bot might be something that is interesting to them.   </p>
+<p>So that are some of the scenarios that you might have specifically with your students. When we look at faculty is if you’re a teacher in the first period of biology maybe you wanna provide a <strong>QnA bot</strong> specific around that topic. Maybe you wanna provide a bot that tells students about osmosis or photosynthesis or whatever it may be that fits within your curriculum. Another scenario where you can use bots for is for example lecture scheduling.   </p>
+<p>I already mentioned it with the campus practical information but if you’re using certain auditorium you wanna make sure that people are aware where it’s at and nothing is as easy as going to a <code>bot</code> and saying <strong>“hey~ bot””</strong>, where is this auditorium? Also when we think about <code>bots</code>, task reminders. Kinda like what I brought up in the beginning when you need to go to the airport or to a meeting for example and it reminds you that traffic is heavy. Those are specific <code>bots</code> for a task reminder that can easily help you and to top it off some <code>bots</code> that will find a specific meeting spot that is availab le for all the people that you worked with. And then finally from a institution perspective think about new employee onboarding. If you’re new, kinda like a new student and you have to get used to all the policies within the university or the school district it’s not an easy thing to do. It might become a little bit overwhelming even. So that is exactly what a <code>bot</code> can help you with is providing that information to new employees to make their onboarding a lot easier.   </p>
+<p>Also think about vacation day requests, think about benefit information, and finally also <code>FAQ consolidation</code> and that’s something I’m going to show a little bit more in depth in the following parts that we’re going to build.  </p>
+<p>But every school district, every university, every college has multiple <code>FAQs</code> depending on the topic. So if you wanna find information you already need to know what the <code>FAQs</code> that you’re actually looking for. And within that FAQ you need to find what the specific question is that is most relevant to you and if there’s multiple sections in the answer of the question then you have to go in and see what is relevant to you. How do we bring all these <code>FAQs</code> together in one bot? And that’s exactly what we’re going to do in the follow parts.  </p>
+<h3 id="Create-the-Bot"><a href="#Create-the-Bot" class="headerlink" title="Create the Bot"></a>Create the Bot</h3><p>So what does it look like from an end user perspective? So what I’ve done here is really created a simulation and I named my bot the <strong>As kBrandon’s bot</strong> So every type of information that we need is a part of that bot and you see that it really starts conversational. I say hello to the bot, I ask how the bot is. The bot is responsive, tells me exactly what I wanna know and then I get into the information that I need.  </p>
+<p>I’m going to show you how you can build exactly what you see here with <strong>zero line of code</strong>. There’s no code involved whatsoever. So how does this work? What do I need? So there’s a number of services that you’re going to need.</p>
+<h3 id="1-QnA-Maker"><a href="#1-QnA-Maker" class="headerlink" title="1. QnA Maker"></a>1. QnA Maker</h3><p>The first one is what we call our Q and A Maker and the URL is <strong>qandamaker.ai</strong> and that is going to be the location where you’re going to <code>store your question and answer pairs</code>.<br>That’s where you’re going to store all the questions that you think your end users are going to be asking and the questions that you wanna provide. We’re also going to show you how you can reuse all these FAQs that you already have available on your website so that you don’t have to start from scratch.   </p>
+<h3 id="2-Azure-Bot-Services"><a href="#2-Azure-Bot-Services" class="headerlink" title="2. Azure Bot Services"></a>2. Azure Bot Services</h3><p>Also we need the <code>Azure Bot Services</code> and you’re going to see it’s a lot easier than just you don’t really need to know a lot about Azure. A lot of the information is pre-populated for you so you’re going to see it’s a very easy thing to do. Of course you need the people who need information. They’re going to be your end users of your specific bot and of course, like I said in the beginning, what is one of the characteristics of a good bot is easy to find, easy accessible, and that is exactly what you can have with teams and that’s one of the important things why we always stress that everybody has access to teams. If you provide access to teams they can start up the conversation, they can make sure that they can ask the questions and if you make even a bot available in the team itself then it becomes very obvious that being able to create a team is very important in this scenario.</p>
+<h3 id="3-Microsoft-Teams"><a href="#3-Microsoft-Teams" class="headerlink" title="3. Microsoft Teams"></a>3. Microsoft Teams</h3><p>In our case we’re going to use <code>Microsoft Teams</code>. When we click on Teams it will be opened in our Teams environment. So we can go in and test it and as you can see I get the same experience as what I’ve shown you in the beginning. So now I know that this bot actually is functional, it works, and so now we can start thinking about how do we make this available to my whole organization? How do we make this available to every single end user I might have? So to do that I’m going to need a special application. It’s called App Studio and still, like you’ve seen, still haven’t written a single line of code yet and trust me I will not have to.   </p>
+<p>I go into my <code>app studio</code>, I’m going into Manifest Editor which is the second tab on the top, and I’m going to create a new application. I’m going to fill in all my information that I see on my app details and then on the left-hand side you see under Capabilities you see bots. When I select that I’m going to say I already created a bot in Azure and the only thing I need to do there is connect it to a different <code>bot ID</code> and that is the <code>application ID</code> that you get out of Azure. You just copy/paste it from your <code>Azure portal</code>, make it available here in the <code>bot ID</code> and then you select what the configuration of your bot actually is. You will define that it is a messaging bot, if you want to support calling bot as well you can, and then of course what is the scope? Where it that bot going to live? Is it a personal bot, is it a team bot, is it a group chat bot, or maybe a combination of all three. You just select what you want it to use and then you click on Save. Finally you have the test and distribute and so you have three options there. First option is you install it just for yourself. So you can use it, you can test it as the end user, not necessarily from the <code>Azure portal</code>. And finally you have the download and that’s the one if you wanna start distributing it through your organization, you can download the bot package and make it available to everybody. </p>
+<h2 id="Demo-on-Creating-the-bot-AskBrandonsBot"><a href="#Demo-on-Creating-the-bot-AskBrandonsBot" class="headerlink" title="Demo on Creating the bot - AskBrandonsBot"></a>Demo on Creating the bot - AskBrandonsBot</h2><p>You’ll need to complete the following steps to create a conversational bot:<br><br>1: Prepare your development environment.<br><br>2: Create your web service.<br><br>3: Register your web service as a bot with Microsoft Bot Framework.<br><br>4: Create your app manifest and your app package.<br><br>5: Upload your package to Microsoft Teams.<br></p>
+<h2 id="Prepare-your-development-environment"><a href="#Prepare-your-development-environment" class="headerlink" title="Prepare your development environment"></a>Prepare your development environment</h2><p>The first thing you’ll need to do is prepare your development environment. You’ll need to make sure custom app uploading is enabled for the Office 365 organization you want to build your app in. If you need a dedicated development tenant, you can sign up for the <a target="_blank" rel="noopener" href="https://developer.microsoft.com/office/dev-program">Office 365 developer program</a>. For additional information see <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/prepare-your-o365-tenant">Setup your development environment</a>.</p>
+<h2 id="Create-your-web-service"><a href="#Create-your-web-service" class="headerlink" title="Create your web service"></a>Create your web service</h2><p>The heart of your bot is your <strong>web service</strong>. It will define a single route, typically <em>/api/messages</em>, on which to receive all requests. To get started, you have a few options to choose from:</p>
+<ul>
+<li>Start with the Teams conversation bot sample in either <a target="_blank" rel="noopener" href="https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/57.teams-conversation-bot">C#/dotnet Github Samples</a> or <a target="_blank" rel="noopener" href="https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot">JavaScript Github Samples</a>.</li>
+<li>If you’re using JavaScript, use the <a target="_blank" rel="noopener" href="https://github.com/OfficeDev/generator-teams">Yeoman Generator for Microsoft Teams</a> to scaffold your Teams app, including your web service. This is particularly helpful when building a Teams app that contains more than just a conversational bot.</li>
+<li>Create your web service from scratch. You can choose to add the Bot Framework SDK for your language, or you can work directly with the JSON payloads.</li>
+</ul>
+<h2 id="Register-your-web-service-with-the-Bot-Framework"><a href="#Register-your-web-service-with-the-Bot-Framework" class="headerlink" title="Register your web service with the Bot Framework"></a>Register your web service with the Bot Framework</h2><p> Important</p>
+<p>When registering your web service, be sure to set the <strong>Display name</strong> to the same name you used for your <strong>Short name</strong> in your app manifest. When your app is distributed by either direct uploading or through an organization’s app catalog, messages sent to a conversation by your bot will use the registration’s <strong>Display name</strong> rather than the app’s <strong>Short name</strong>.</p>
+<p>Registering your web service with the Bot Framework provides a secure communication channel between the Teams client and your web service. The Teams client and your web service never communicate directly. Instead, messages are routed through the Bot Framework Service (Microsoft Teams uses a separate instance of this service that is compliant with Office 365 standards).</p>
+<p>You have two options when registering your web service with the Bot Framework. You can use either <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/create-a-bot-for-teams#using-app-studio">App Studio</a> or the <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/create-a-bot-for-teams#in-the-legacy-portal">legacy portal</a> to register your bot without using an Azure subscription. Or, if you already have an Azure subscription (or don’t mind creating one), you can use the <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/create-a-bot-for-teams#with-an-azure-subscription">Azure portal</a> to register your web service.</p>
+<h3 id="With-an-Azure-subscription"><a href="#With-an-Azure-subscription" class="headerlink" title="With an Azure subscription"></a>With an Azure subscription</h3><p>You can also register your web service by creating a Bot Channels Registration resource in the Azure portal.</p>
+<ol>
+<li>In the <a target="_blank" rel="noopener" href="https://ms.portal.azure.com/#home">Azure portal</a>, under Azure services, select <strong>Create a resource</strong>.</li>
+<li>In the search box enter “bot”. And in the drop-down list, select <strong>Bot Channels Registration</strong>.</li>
+<li>Select the <strong>Create</strong> button.</li>
+<li>In the Bot <strong>Channel Registration</strong> blade, provide the requested information about your bot.</li>
+<li>Leave the <strong>Messaging endpoint</strong> box empty for now, you will enter the required URL after deploying the bot. The following picture shows an example of the registration settings:  </li>
+</ol>
+<img src="/post/22652c2c/auth-bot-channels-registration.png" class="">  
+
+<ol start="6">
+<li>Click <strong>Microsoft App ID</strong> and password and then <strong>Create New.</strong></li>
+<li>Click <strong>Create App ID in the App Registration Portal</strong> link.</li>
+<li>In the displayed <strong>App registration</strong> window, click the <strong>New registration</strong> tab in the upper left.</li>
+<li>Enter the name of the bot application you are registering, we used <em>BotTeamsAuth</em> (you need to select your own unique name).</li>
+<li>or the <strong>Supported account types</strong> select <em>Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox).</em></li>
+<li>Click the <strong>Register</strong> button. Once completed, Azure displays the Overview page for the application.</li>
+<li>Copy and save to a file the <strong>Application (client) ID</strong> value.</li>
+<li>In the left panel, click <strong>Certificate and secrets</strong>.</li>
+</ol>
+<ul>
+<li>Under Client secrets, click <strong>New client secret</strong>.</li>
+<li>Add a description to identify this secret from others you might need to create for this app.</li>
+<li>Set <em>Expires</em> to your selection.</li>
+<li>Click <strong>Add</strong>.</li>
+<li>Copy the client secret and save it to a file.</li>
+</ul>
+<ol start="14">
+<li>Go back to the <strong>Bot Channel Registration</strong> window and copy the App ID and the Client secret in the <strong>Microsoft App ID</strong> and <strong>Password</strong> boxes, respectively.</li>
+<li>Click <strong>OK</strong>.</li>
+<li>Finally, click <strong>Create</strong>.  </li>
+</ol>
+<p>After Azure has created the registration resource it will be included in the resource group list.  </p>
+<img src="/post/22652c2c/auth-bot-channels-registration-group.png" class="">  
+
+<p>Once your bot channels registration is created, you’ll need to enable the Teams channel.</p>
+<ol>
+<li>In the Azure portal, under Azure services, select the <strong>Bot Channel Registration</strong> you just created.</li>
+<li>In the left panel, click <strong>Channels</strong>.</li>
+<li>Click the Microsoft Teams icon, then choose <strong>Save</strong>.  </li>
+</ol>
+<h2 id="Create-your-app-manifest-and-package"><a href="#Create-your-app-manifest-and-package" class="headerlink" title="Create your app manifest and package"></a>Create your app manifest and package</h2><p>Your app manifest defines the metadata for your app, the extension points your app is using, and pointers to the web services those extension points connect to. You can either use App Studio to help you create your app manifest, or create it manually.  </p>
+<h3 id="Add-using-App-Studio"><a href="#Add-using-App-Studio" class="headerlink" title="Add using App Studio"></a>Add using App Studio</h3><ol>
+<li>In the Teams client, open App Studio from the … overflow menu on the left navigation rail. If App Studio isn’t already installed, you can do so by searching for it.</li>
+<li>On the <strong>Manifest editor</strong> tab select <strong>Create a new app</strong> (or if you’re adding a bot to an existing app, you can import your app package)</li>
+<li>Add your app details (see <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/platform/resources/schema/manifest-schema">manifest schema definition</a> for full descriptions of each field).</li>
+<li>On the <strong>Bots</strong> tab select the <strong>Setup</strong> button.</li>
+<li>You can either create a new web service registration (<strong>New bot</strong>), or if you’ve already registered one, select <strong>Existing bot</strong>.</li>
+<li>Select the capabilities and scopes your bot will need.</li>
+<li>If necessary, update your bot endpoint address to point to your bot. It should look something like <a target="_blank" rel="noopener" href="https://someplace.com/api/messages">https://someplace.com/api/messages</a>.</li>
+<li>Optionally, add <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/create-a-bot-commands-menu">bot commands</a>.</li>
+<li>Optionally, you can download your completed app package from the <strong>Test and distribute</strong> tab.<h3 id="Create-it-manually"><a href="#Create-it-manually" class="headerlink" title="Create it manually"></a>Create it manually</h3>As with messaging extensions and tabs, you update the <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/platform/resources/schema/manifest-schema">app-manifest</a> to define your bot. Add new top-level JSON structure in your app manifest with the <em>bots</em> property.<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Maximum size</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><em>botId</em></td>
+<td>String</td>
+<td>64 characters</td>
+<td>✔</td>
+<td>The unique Microsoft app ID for the bot as registered with the Bot Framework. This may well be the same as the overall app ID.</td>
+</tr>
+<tr>
+<td><em>needsChannelSelector</em></td>
+<td>Boolean</td>
+<td>64 characters</td>
+<td></td>
+<td>Describes whether or not the bot utilizes a user hint to add the bot to a specific channel. Default: false.</td>
+</tr>
+<tr>
+<td><em>isNotificationOnly</em></td>
+<td>Boolean</td>
+<td>64 characters</td>
+<td></td>
+<td>Indicates whether a bot is a one-way, notification-only bot, as opposed to a conversational bot. Default: false.</td>
+</tr>
+<tr>
+<td><em>supportsFiles</em></td>
+<td>Boolean</td>
+<td>64 characters</td>
+<td></td>
+<td>ndicates whether the bot supports the ability to upload/download files in personal chat. Default: false.</td>
+</tr>
+<tr>
+<td><em>scopes</em></td>
+<td>Array of enum</td>
+<td>3</td>
+<td>✔</td>
+<td>Specifies whether the bot offers an experience in the context of a channel in a team, in a group chat (groupchat), or an experience scoped to an individual user alone (personal). These options are non-exclusive.</td>
+</tr>
+</tbody></table>
+</li>
+</ol>
+<p>Optionally, you can define one or more lists of commands that your bot can recommend to users. The object is an array (maximum of 2 elements) with all elements of type <em>object</em>. You must define a separate command list for each scope that your bot supports. See <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/create-a-bot-commands-menu">Bot menus</a>, for more information.  </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Maximum size</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><em>items.scopes</em></td>
+<td>array of enum</td>
+<td>3</td>
+<td>✔</td>
+<td>Specifies the scope for which the command list is valid. Options are team, personal, and groupchat.</td>
+</tr>
+<tr>
+<td><em>items.commands</em></td>
+<td>array of objects</td>
+<td>10</td>
+<td>✔</td>
+<td>An array of commands the bot supports:title: the bot command name (string, 32) description: a simple description or example of the command syntax and its argument (string, 128)</td>
+</tr>
+</tbody></table>
+<h3 id="Simple-manifest-example"><a href="#Simple-manifest-example" class="headerlink" title="Simple manifest example"></a>Simple manifest example</h3><p>The example below is a simple bot object, with two command lists defined. This is not the entire app manifest file, just the part specific to messaging extensions.  </p>
+<pre class="line-numbers language-json"><code class="language-json"><span class="token punctuation">[</span>
+  <span class="token property">"bots"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"botId"</span><span class="token operator">:</span> <span class="token string">"%MICROSOFT-APP-ID-REGISTERED-WITH-BOT-FRAMEWORK%"</span><span class="token punctuation">,</span>
+      <span class="token property">"needsChannelSelector"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">"isNotificationOnly"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">"scopes"</span><span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token string">"team"</span><span class="token punctuation">,</span> <span class="token string">"personal"</span><span class="token punctuation">,</span> <span class="token string">"groupchat"</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">"supportsFiles"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">"commandLists"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"scopes"</span><span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token string">"team"</span><span class="token punctuation">,</span> <span class="token string">"groupchat"</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">"commands"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Command 1"</span><span class="token punctuation">,</span>
+              <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Description of Command 1"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Command N"</span><span class="token punctuation">,</span>
+              <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Description of Command N"</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"scopes"</span><span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token string">"personal"</span><span class="token punctuation">,</span> <span class="token string">"groupchat"</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">"commands"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Personal command 1"</span><span class="token punctuation">,</span>
+              <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Description of Personal command 1"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Personal command N"</span><span class="token punctuation">,</span>
+              <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Description of Personal command N"</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="Create-your-app-package-manually"><a href="#Create-your-app-package-manually" class="headerlink" title="Create your app package manually"></a>Create your app package manually</h3><p>To create an app package, you need to add your app manifest and (optionally) your app icons to a .zip archive file. See <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/apps-package">Create your app package</a> for complete details. Make sure your .zip archive contains only the necessary files, and has no additional folder structure inside of it.  </p>
+<h2 id="Upload-your-package-to-Microsoft-Teams"><a href="#Upload-your-package-to-Microsoft-Teams" class="headerlink" title="Upload your package to Microsoft Teams"></a>Upload your package to Microsoft Teams</h2><img src="/post/22652c2c/insall-bot-teams.jpg" class="">  
+
+<p> <strong>Note</strong><br>To successfully upload your bot, your tenant admin must first <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/microsoftteams/manage-apps#manage-org-wide-app-settings">allow uploading</a> third-party or custom apps in Teams.<br>If you’ve been using App Studio, you can install your app from the <strong>Test and distribute</strong> tab of the <strong>Manifest editor</strong>. Alternatively, you can install your app package by clicking the … overflow menu from the left navigation rail, clicking <strong>More apps</strong>, then the <strong>Upload a custom app</strong> link. You can also import an app manifest or app package into App Studio to make additional updates before uploading..  </p>
+<h2 id="Finally-Chat-with-the-Bot"><a href="#Finally-Chat-with-the-Bot" class="headerlink" title="Finally Chat with the Bot"></a>Finally Chat with the Bot</h2><img src="/post/22652c2c/askbranonsbot.jpg" class=""> <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -1103,31 +1308,31 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/post/9f443a4b.html">
+                <a href="/post/29cb6542.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Create a bot for Microsoft Teams">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Hexo博客主题hexo-theme-matery">
                         
-                        <span class="card-title">Create a bot for Microsoft Teams</span>
+                        <span class="card-title">Hexo博客主题hexo-theme-matery</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            You’ll need to complete the following steps to create a conversational bot:1: Prepare your development environment.2: Cr
+                            The personal blog was buit with Hexo and used the "hexo-theme-matery" as the Theme. Used "Valine" and "busuanzi statistics". Responsive design, blog can be displayed well on desktop, tablet, mobile phone and other devices
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-11
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/AI/" class="post-category">
-                                    AI
+                            <a href="/categories/Front-end/" class="post-category">
+                                    Front-end
                                 </a>
                             
                             
@@ -1137,20 +1342,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Teams/">
-                        <span class="chip bg-color">Teams</span>
+                    <a href="/tags/Blog/">
+                        <span class="chip bg-color">Blog</span>
                     </a>
                     
-                    <a href="/tags/Bot/">
-                        <span class="chip bg-color">Bot</span>
+                    <a href="/tags/Hexo/">
+                        <span class="chip bg-color">Hexo</span>
                     </a>
                     
-                    <a href="/tags/Chatbot/">
-                        <span class="chip bg-color">Chatbot</span>
-                    </a>
-                    
-                    <a href="/tags/AI/">
-                        <span class="chip bg-color">AI</span>
+                    <a href="/tags/hexo-theme-matery/">
+                        <span class="chip bg-color">hexo-theme-matery</span>
                     </a>
                     
                 </div>
@@ -1394,7 +1595,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Word Count:&nbsp;<span
-                class="white-color">7.2k</span>&nbsp;Words
+                class="white-color">9.4k</span>&nbsp;Words
             
             
             
